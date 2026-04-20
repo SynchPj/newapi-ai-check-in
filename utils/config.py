@@ -40,7 +40,7 @@ class ProviderConfig:
     origin: str
     login_path: str = "/login"
     status_path: str = "/api/status"
-    auth_state_path: str = "api/oauth/state"
+    auth_state_path: str = "/api/oauth/state"
     check_in_path: str | Callable[[str, str | int], str] | None = None
     check_in_status: bool | CheckInStatusFunc = False  # 签到状态查询：True=标准检查，False=不检查，Callable=自定义函数
     user_info_path: str = "/api/user/self"
